@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="Swiper_4.3.0_css_swiper.css">
+    <link rel="stylesheet" href="w3.css">
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper" style="height: 100vh">
+            <div class="swiper-slide w3-blue w3-block">Slide 1</div>
+            <div class="swiper-slide w3-green">Slide 2</div>
+            <div class="swiper-slide w3-teal">Slide 3</div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+    <script src="swiper.js"></script>
+    <script>        
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            loop: true,
+            grabCursor: true,
+            autoplay: {
+                delay: 5000
+            },
+            speed: 800,
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
+
+            // 如果需要滚动条
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+        })        
+    </script>
+</body>
+
+</html>
